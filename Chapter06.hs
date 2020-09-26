@@ -70,6 +70,9 @@ initializeSimple 0 _ = []
 initializeSimple n v = (fromIntegral n, fromIntegral n)
                      : initializeSimple (n-1) v
 
+info :: [(Double, Double)]
+info = [(1, 1), (1, 2), (4, 4), (4, 5)]
+
 -- LENSES
 -- Hand-written
 data Client0 i = GovOrg0     i String
